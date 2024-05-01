@@ -1,0 +1,19 @@
+{
+  "name": "b",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm ./index.ts",
+    "test": "mocha ./test.ts"
+  },
+  "dependencies": {
+    "a": "*"
+  },
+  "devDependencies": {
+    "mocha": "^10.4.0",
+    "chai": "^4.4.1"
+  },
+  "mocha": {
+    "loader": "ts-node/esm"
+  }
+}
